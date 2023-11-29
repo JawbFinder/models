@@ -1,4 +1,4 @@
-module jawb_finder/models
+module github.com/JawbFinder/models
 
 go 1.21.1
 
