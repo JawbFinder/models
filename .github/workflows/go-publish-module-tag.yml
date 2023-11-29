@@ -39,3 +39,8 @@ jobs:
             ref: 'refs/tags/${{ github.event.inputs.tag }}',
             sha: context.sha
           })
+    - name: Create Release
+      uses: ncipollo/release-action@v1.13.0
+      with:
+        tag: "${{ github.event.inputs.tag }}"
+            
