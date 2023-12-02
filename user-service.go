@@ -14,5 +14,10 @@ type User struct {
 type UserSkills struct {
 	EmailId string   `bson:"_id,required"`
 	Skills  []string `bson:"skills,omitempty"`
-	Resume  string   `bson:"resume_url,omitempty"`
+	Resume  []Resume `bson:"resume,omitempty"`
+}
+
+type Resume struct {
+	ResumeUrl     string `bson:"resume_url,required"`
+	ResumeVersion string `bson:"resume_version,required"`
 }
