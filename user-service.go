@@ -21,3 +21,9 @@ type Resume struct {
 	ResumeUrl     string `bson:"resume_url,required"`
 	ResumeVersion string `bson:"resume_version,required"`
 }
+
+type FileMetadata struct {
+	gorm.Model
+	S3ObjectKey   string
+	ResumeVersion string
+}
