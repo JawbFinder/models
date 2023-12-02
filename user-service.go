@@ -24,6 +24,6 @@ type Resume struct {
 
 type FileMetadata struct {
 	gorm.Model
-	S3ObjectKey   string
-	ResumeVersion string
+	S3ObjectKey string
+	FileVersion string
 }
